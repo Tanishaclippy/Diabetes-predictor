@@ -32,16 +32,16 @@ def main():
     
     Pregnancies=st.text_input("Please enter number of pregnancies ")
     Glucose=st.text_input("Please enter your recent glucose level")
-    Blood-pressure=st.text_input("Please enter your blood pressure value(recent)")
-    Skin-thickness=st.text_input("Please enter your skin thickness")
+    Bloodpressure=st.text_input("Please enter your blood pressure value(recent)")
+    Skinthickness=st.text_input("Please enter your skin thickness")
     Insulin=st.text_input("Please enter your insulin levels")
     BMI=st.text_input("Please enter your BMI level")
-    Diabetes-Pedigree=st.text_input("Please enter your Diabetes Pedigree value")
+    DiabetesPedigree=st.text_input("Please enter your Diabetes Pedigree value")
     Age=st.text_input("Please enter your age in years")
     
     diagonsis=''
     if st.button("Diabetes test result"):
-        diagonsis=diabetes_prediction([Pregnancies,Glucose,Blood-pressure,Skin-thickness,Insulin,BMI,Diabetes-Pedigree,Age])
+        diagonsis=diabetes_prediction([Pregnancies,Glucose,Bloodpressure,Skinthickness,Insulin,BMI,DiabetesPedigree,Age])
     st.success(diagonsis)
 
 
